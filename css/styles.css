@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  /*
+  *template-columns
+  *horizontal layout, creates columns
+  *3 units of mesure: pixels(px, rem, em), auto, fractions(fr)
+  *fractions will take up the remaining space available
+  *adding more arguments will create more columns
+  */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+  /* 
+  template-rows
+  effects the vertical layout, aka the rows
+  */
+  /* grid-template-rows: 200px 200px 200px 50px; */
+  gap: 10px 10px;
+  grid-gap: 10px 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
